@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="backup-rcloneのGoogle Driveデータへのアクセス、利用目的、保存、削除について説明します。" />
+  <title>プライバシーポリシー — backup-rclone</title>
+  <style>
+    body { max-width: 46rem; margin: 3rem auto; padding: 0 1.25rem; color: #20242b; background: #fff; font: 1rem/1.8 system-ui, sans-serif; }
+    h1, h2 { line-height: 1.4; }
+    h2 { margin-top: 2rem; font-size: 1.25rem; }
+    a { color: #164eb5; text-underline-offset: .2em; }
+    a:focus-visible { outline: 3px solid #164eb5; outline-offset: 4px; }
+    code { overflow-wrap: anywhere; }
+    footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid #d6dae0; color: #505966; }
+  </style>
+</head>
+<body>
+  <main>
+    <p><a href="index.html">backup-rcloneのホームページ</a></p>
+    <h1>プライバシーポリシー</h1>
+    <p>本ポリシーは、所有者本人が使用する暗号化バックアップツール「backup-rclone」に適用します。</p>
+
+    <h2>アクセスするデータと利用目的</h2>
+    <p>Google Driveへのアクセスには<code>drive.file</code>スコープを使用します。このアプリが作成したファイルと、利用者が明示的にアクセスを許可したファイルについて、ファイル内容と名前・サイズ・更新時刻などの必要なメタデータを、バックアップ、整合性検証、復元のために処理します。</p>
+
+    <h2>保存・処理と暗号化</h2>
+    <p>処理には本人が管理するローカル端末およびクラウド上の実行環境と、本人のGoogle Driveを使用します。バックアップはrclone cryptを通じて、内容・ファイル名・フォルダ名を送信前に暗号化してGoogle Driveに保存します。復元先では復号したファイルを保存します。</p>
+    <p>ファイルのサイズ、更新時刻、フォルダの構造など、暗号化で隠れない情報があります。</p>
+
+    <h2>認証情報</h2>
+    <p>OAuthトークンなどの認証情報と復号用の秘密は、利用者が管理する実行環境で使用・保持します。この説明サイトには、認証情報の入力・収集やバックアップファイルのアップロード機能はありません。</p>
+
+    <h2>データの共有</h2>
+    <p>本ツールは、Googleユーザーデータを広告や販売の目的には使用しません。バックアップと復元のために利用する実行環境およびGoogle Driveとの間でデータを転送します。各サービス提供者による情報の取扱いには、それぞれのサービスの規約・ポリシーが適用されます。</p>
+
+    <h2>保存期間と削除</h2>
+    <p>バックアップは、利用者が必要とする間保存します。利用者本人がGoogle Drive上のバックアップと端末上のコピーをそれぞれ削除できます。Googleアカウントの設定からアプリのアクセスを取り消すこともできます。アクセスの取消しによって、既存のバックアップや端末のコピーが自動的に削除されることはありません。</p>
+
+    <h2>説明サイトの配信</h2>
+    <p>このサイトはGitHub Pagesで配信します。独自のアクセス解析、広告、入力フォームは設置していません。GitHubによる情報の取扱いについては、<a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHubのプライバシーステートメント</a>をご参照ください。</p>
+
+    <h2>連絡先と変更</h2>
+    <p>連絡先はGoogleのOAuth同意画面に設定されたユーザーサポートメールです。データの取扱いを変更する場合は、このページを更新します。</p>
+  </main>
+  <footer>最終更新：2026年10月28日</footer>
+</body>
+</html>
